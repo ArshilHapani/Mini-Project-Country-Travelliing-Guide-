@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page | Country Select </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://css.gg/backspace.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f015c893ae.js" crossorigin="anonymous"></script>
+    <script>
+        console.log(document.body) //Returns numm bro it returns nulll
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        /* Style the header */
+        .header {
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            text-align: center;
+            color: rgb(66, 66, 66);
+        }
+
+        /* navigation top bar design  */
+
+        body {
+            background-color: #1e1e1e;
+            background-image: url("https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80");
+            background-size: cover;
+            height: 100vh;
+            margin-bottom: 100px;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(66, 66, 66);
+            padding-top: 20px;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 8px;
+        }
+
+            h1:hover {
+                color: aqua;
+            }
+
+        a:link {
+            color: rgb(66, 66, 66);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(66, 66, 66);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(0, 162, 255);
+            background-color: transparent;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            height: 40px;
+            margin: 20px 1px;
+            /* background-color: rgba(23, 23, 50, 0.7); */
+            text-align: left;
+            border-radius: 4px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: left;
+        }
+
+            .main > li {
+                margin: 0 2%;
+            }
+
+                .main > li .al {
+                    border-left: 1px solid rgba(23, 23, 50, 1);
+                }
+
+        .al {
+            text-decoration: none;
+            color: rgb(66, 66, 66);
+            text-transform: capitalize;
+            font-family: monospace;
+            display: block;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: background-color 0.5s ease-in-out;
+            font-family: "Raleway", sans-serif;
+        }
+
+            .al:hover {
+                background-color: #2637b7;
+            }
+
+        .column {
+            float: left;
+            padding: 10px;
+            color: rgb(66, 66, 66);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+            /* Left and right column */
+            .column.side {
+                width: 50%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 50%;
+                letter-spacing: 2px;
+            }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+
+        /* select your country hover  */
+
+        .nav {
+            font-family: 'Titillium Web';
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+        }
+
+            .nav * {
+                box-sizing: border-box;
+                transition: all .35s ease;
+            }
+
+            .nav li {
+                display: inline-block;
+                list-style: outside none none;
+                margin: .5em 0em;
+                padding: 0;
+            }
+
+            .nav a {
+                padding: .5em .8em;
+                /* color: rgba(255,255,255,.5); */
+                position: relative;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+                .nav a::before,
+                .nav a::after {
+                    content: '';
+                    height: 14px;
+                    width: 14px;
+                    position: absolute;
+                    transition: all .35s ease;
+                    opacity: 0;
+                }
+
+                .nav a::before {
+                    content: '';
+                    right: 0;
+                    top: 0;
+                    border-top: 3px solid rgb(66, 66, 66);
+                    border-right: 3px solid rgb(66, 66, 66);
+                    transform: translate(-100%, 50%);
+                }
+
+                .nav a:after {
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    border-bottom: 3px solid rgb(66, 66, 66);
+                    border-left: 3px solid rgb(66, 66, 66);
+                    transform: translate(100%, -50%)
+                }
+
+                .nav a:hover:before,
+                .nav a:hover:after {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
+
+                .nav a:hover {
+                    color: rgb(66, 66, 66);
+                }
+
+        /* social icons side */
+        ul {
+            display: flex;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+            ul li {
+                list-style: none;
+            }
+
+                ul li a {
+                    width: 80px;
+                    height: 80px;
+                    background-color: rgb(66, 66, 66);
+                    text-align: center;
+                    line-height: 80px;
+                    font-size: 35px;
+                    margin: 0 10px;
+                    display: block;
+                    border-radius: 50%;
+                    position: relative;
+                    overflow: hidden;
+                    border: 3px solid rgb(66, 66, 66);
+                    z-index: 1;
+                }
+
+                    ul li a .icon {
+                        position: relative;
+                        /* color: #262626; */
+                        transition: .5s;
+                        z-index: 3;
+                    }
+
+                    ul li a:hover .icon {
+                        color: rgb(66, 66, 66);
+                        transform: rotateY(360deg);
+                    }
+
+                    ul li a:before {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #f00;
+                        transition: .5s;
+                        z-index: 2;
+                    }
+
+                    ul li a:hover:before {
+                        top: 0;
+                    }
+
+                ul li:nth-child(1) a:before {
+                    background: #8b9dc3;
+                    border-radius:50%;
+                }
+
+                ul li:nth-child(2) a:before {
+                    background: #0088CC;
+                    border-radius: 50%;
+                }
+
+                ul li:nth-child(3) a:before {
+                    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                    border-radius: 50%;
+                }
+
+                ul li:nth-child(4) a:before {
+                    background: rgb(255, 255, 0);
+                    border-radius: 50%;
+                }
+
+        @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+        @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
+
+        [data-toggle=modal],
+        button i {
+            position: absolute;
+            top: 18%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            position: relative;
+            padding: 0;
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        [data-toggle=modal] {
+            /* background: #0288D1; */
+            height: 3rem;
+            width: 3rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+            [data-toggle=modal] i {
+                font-size: 2rem;
+            }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.9);
+            visibility: hidden;
+            opacity: 0;
+            z-index: -1;
+            transform: translateY(1rem) translateZ(0);
+            transition: all 0.3s ease;
+        }
+
+            .modal.active {
+                visibility: visible;
+                transform: translateY(0) translateZ(0);
+                opacity: 1;
+                z-index: 999;
+                visibility: visible;
+            }
+
+                .modal.active .content {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+            .modal [data-dismiss=modal] {
+                position: absolute;
+                height: 2rem;
+                width: 2rem;
+                top: 1rem;
+                right: 1rem;
+            }
+
+                .modal [data-dismiss=modal] i {
+                    font-size: 2rem;
+                }
+
+                .modal [data-dismiss=modal] span {
+                    display: block;
+                    color: rgba(255, 255, 255, 0.2);
+                    font-size: 0.5rem;
+                    transform: translateY(1.1rem);
+                }
+
+            .modal .content {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 80%;
+                margin: 0 auto;
+                padding: 1rem 0;
+                overflow: hidden;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease 0.3s;
+            }
+
+                .modal .content.show-tag-results > div.results {
+                    visibility: hidden;
+                    transform: translateX(-100%);
+                }
+
+                .modal .content.show-tag-results > div.tag-results {
+                    visibility: visible;
+                    transform: translateX(0);
+                }
+
+                .modal .content > div {
+                    position: absolute;
+                    width: 100%;
+                    top: 8rem;
+                    left: 0;
+                    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+                }
+
+                    .modal .content > div.results {
+                        visibility: visible;
+                        transform: translateX(0);
+                    }
+
+                    .modal .content > div.tag-results {
+                        visibility: hidden;
+                        transform: translateX(100%);
+                    }
+
+            .modal h2 {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #fff;
+                font-size: 0.75rem;
+                margin-top: 0;
+            }
+
+            .modal input {
+                display: block;
+                width: 100%;
+                background: none;
+                border: 1px solid white;
+                border-width: 0 0 1px 0;
+                color: white;
+                padding: 1.5rem 0;
+                font-size: 2rem;
+                font-weight: 100;
+                font-family: "Roboto";
+            }
+
+                .modal input:focus {
+                    outline: none;
+                }
+
+            .modal ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+                .modal ul li {
+                    position: relative;
+                    color: #949494;
+                    font-size: 1.15rem;
+                    padding: 0.75rem 0.5rem 0.75rem 1.75rem;
+                    cursor: pointer;
+                }
+
+                    .modal ul li:before {
+                        content: "";
+                        position: absolute;
+                        box-sizing: border-box;
+                        top: 50%;
+                        left: 0.5rem;
+                        margin-top: -4px;
+                        display: block;
+                        height: 8px;
+                        width: 8px;
+                        border: 2px solid white;
+                        border-radius: 100%;
+                    }
+
+                    .modal ul li:hover,
+                    .modal ul li:focus {
+                        background: rgba(255, 255, 255, 0.1);
+                        outline: none;
+                    }
+
+                .modal ul + h2 {
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    padding-top: 2rem;
+                    margin-top: 1rem;
+                }
+
+            .modal .tag-results .selected-tag {
+                display: block;
+                position: absolute;
+                left: 3rem;
+                /* background: #0288D1; */
+                color: white;
+                padding: 0.5rem 1rem;
+            }
+
+            .modal .tag-results > ul {
+                margin-left: 35%;
+                width: 60%;
+            }
+
+            .modal .back {
+                position: absolute;
+                top: 30%;
+                left: 90%;
+                height: 1.5rem;
+                width: 1.5rem;
+                color: #fff;
+            }
+
+                .modal .back i {
+                    font-size: 1.5rem;
+                    color: #fff;
+                }
+
+            .modal ::-moz-placeholder {
+                color: rgba(255, 255, 255, 0.3);
+                font-weight: 100;
+                font-family: "Roboto";
+            }
+
+            .modal :-ms-input-placeholder {
+                color: rgba(255, 255, 255, 0.3);
+                font-weight: 100;
+                font-family: "Roboto";
+            }
+
+            .modal ::placeholder {
+                color: rgba(255, 255, 255, 0.3);
+                font-weight: 100;
+                font-family: "Roboto";
+            }
+
+        .material-icons {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <!-- <h1>Explore Something New .!</h1> -->
+    </div>
+
+    <nav>
+        <div class="column side">
+            <span class="nav">
+                <!--<li>
+        <a href="User_Info.aspx" id="ai">info</a>
+    </li>      -->
+                <li>
+                    <a href="Profile_Manage.aspx" id="ai">Profile Manage</a>
+                </li>
+                <li>
+                    <a href="Contact_Form.aspx" id="ai">Contact</a>
+                </li>
+                <li>
+        <a href="New_User.aspx" id="ai">Log in</a>
+    </li>                
+            </span>
+        </div>
+    </nav>
+    <hr>
+    <div class="row">
+        <div class="column side">
+            <h2 style="font-size:100px ; font-family: 'Kdam Thmor Pro', sans-serif; margin-left: 10px;"> Nxer .</h2>
+            <br><br>
+            <span class="nav">
+                <a href="Country select.html" style="color:rgb(66,66,66); ;">Choose your country</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="column middle">
+        <h2>Hey Traveller !</h2><br>
+        <p>
+            <strong> Beware!</strong><br> Traveling is highly addictive! Once you try out that gathering the most
+            unforgettable memories of your life can cost very little, you will never want to stay comfy at home. We put
+            together list of best travel websites that will help to take the first step and GO!
+
+            I promise, it's feasible and verified by many adventurous travelers around the world. Just think how much of
+            your
+            comfort you are willing to sacrifice; where are your personal borders; and what is your inner, deep reason
+            for
+            this particular travel.
+        </p><br>
+
+    </div>
+    </div>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/arshil.hapani" target="_blank">
+                <i class=" fab fa-facebook icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://t.me/Arshil_Hapani" target="_blank"><i class="fab fa-telegram icon"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/invites/contact/?i=1q6rcduk43ki2&utm_content=3ergulk" target="_blank">
+                <i class="fab fa-instagram icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.snapchat.com/add/arshil_hapani?share_id=Q6v7eFJB9v8&locale=en-US" target="_blank">
+                <i class="fab fa-snapchat icon"></i>
+            </a>
+        </li>
+
+    </ul>
+
+    <!--  <button data-toggle="modal" data-target="searchModal"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+
+    <div id="searchModal" class="modal">
+        <div class="content">
+            <form action="#">
+                <input class="search-input" type="text" placeholder="Search" />
+                <div class="results">
+                    <br><br>
+                    <h2>Country</h2>
+                    <br><br>
+                    <h2>City</h2><br><br>
+                    <h2>States</h2><br><br>
+                    <h2>Places</h2>
+                </div><!-- end .results -->
+            </form>
+        </div>
+        <button data-dismiss="modal" style="color: white; top: 5%; left: 95%;">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+</body>
+
+</html>

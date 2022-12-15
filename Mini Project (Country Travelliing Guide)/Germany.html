@@ -1,0 +1,366 @@
+﻿<html>
+<head>
+    <title>| Germany Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 800px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        /*---------------*/
+        /***** Sarah *****/
+        /*---------------*/
+
+        figure.effect-sarah {
+            background: #3b3c3c;
+        }
+
+            figure.effect-sarah img {
+                max-width: none;
+                width: -webkit-calc(100% + 20px);
+                width: calc(100% + 20px);
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(-10px,0,0);
+                transform: translate3d(-10px,0,0);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            figure.effect-sarah:hover img {
+                opacity: 0.4;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+            figure.effect-sarah figcaption {
+                text-align: left;
+            }
+
+            figure.effect-sarah h2 {
+                position: relative;
+                overflow: hidden;
+                padding: 0.5em 0;
+            }
+
+                figure.effect-sarah h2::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #fff;
+                    content: '';
+                    -webkit-transition: -webkit-transform 0.35s;
+                    transition: transform 0.35s;
+                    -webkit-transform: translate3d(-100%,0,0);
+                    transform: translate3d(-100%,0,0);
+                }
+
+            figure.effect-sarah:hover h2::after {
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+            figure.effect-sarah p {
+                padding: 1em 0;
+                opacity: 0;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(100%,0,0);
+                transform: translate3d(100%,0,0);
+            }
+
+            figure.effect-sarah:hover p {
+                opacity: 1;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+                word-spacing: normal;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">Germany .!</h1>
+    <div class="content">
+        <h2>Full of culture, lively locals and some great beer, Germany is home to many captivating travel destinations. Whether you're looking to soak up art, culture and history or party at Oktoberfest, this country appeals to a variety of tourists. U.S. News weighed factors like sights, food, culture, accessibility and value, in addition to expert and traveler opinions, to create the best places to visit in Germany. Vote for the destinations you love below to help shape next year's ranking. (Note: Some of the below destinations may be affected by the coronavirus outbreak. Check with the CDC and the U.S. Department of State before traveling.)</h2>
+
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/2b5e50c/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/berlin_main_445x280_iVqQtBE.jpg" alt="img12" />
+                <figcaption>
+                    <div>
+                        <h2>Berlin <span></span></h2>
+                        <p>Germany's capital city is akin to Paris and London in that you just can't visit the country without going here. Like many large cities, Berlin truly offers something for everyone, from a lively nightlife scene to beautiful green spaces. What's more, Berlin pays homage to its more ominous past with powerful and humbling attractions. Must-visit historical sights include the Memorial to the Murdered Jews of Europe, the Berlin Wall Memorial, the East Side Gallery and Checkpoint Charlie. </p>
+                    </div>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/eacfea5/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/munich_small_edit_445x280_3GKx3nO.jpg" alt="img1" />
+                <figcaption>
+                    <div>
+                        <h2>Munich <span></span></h2>
+                        <p>Visitors flock to Munich every fall to take part in Oktoberfest, a two-week-long festival featuring Germany's best beers and bratwurst. But Munich offers so much more than just this festival. The city is home to beautiful gardens, exquisite churches and engaging museums worth exploring. Wander around Munich's charming neighborhoods and spend some time in Marienplatz, a central square that's filled with shops and hosts a popular Christmas market. </p>
+                    </div>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/248850e/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/hamburg_main_edited_getty_images_445x280_uxYBSVa.jpg" alt="img02" />
+                <figcaption>
+                    <h2>Hamburg</h2>
+                    <p>Hamburg is home to Germany's largest cruise port, the Elbe river and hundreds of canals that flow through the city center, making it an excellent place to explore by boat. However, Hamburg is also worth checking out on foot  many of its top attractions are clustered in the heart of the city, including the Alter Elbtunnel and Platen un Blomen park. Plus, Hamburg is a haven for music lovers thanks to its impressive Elbphilharmonie complex, which features two concert halls and a plaza with sweeping city views. </p>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/288d244/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/nuremberg_habud3_m_445x280_7stFZrW.jpg" alt="img14" />
+                <figcaption>
+                    <h2> GNuremberg</h2>
+                    <p>While the thought of visiting Germany during winter might initially induce panic, travelers should seriously consider braving the conditions to experience the city during Christmas. The reason for this is Nuremberg's grand Christkindlesmarkt, which is both Germany's largest Christmas market and one the country's most-visited sights. Plus, many of Nuremberg's top attractions are protected from the elements, so visitors can stay warm while perusing the city's museums, churches, World War II sites and medieval Imperial Castle.</p>
+                    <a href="#">Explore</a>
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/93b1515/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/neuschwanstein_boris_jordan_photography_m_445x280_Pu0vfsN.jpg" alt="img06" />
+                <figcaption>
+                    <h2>Neuschwanstein</h2>
+                    <p>Though Neuschwanstein Castle was never meant for visitors, it has become one of Germany's most popular attractions. King Ludwig II commissioned the castle as a place of refuge from public life. Today, more than 1 million people stroll through the property every year. The castle's Romanesque Revival-style is certainly romantic, but what elevates this castle to bucket list status is its unbelievable setting in the middle of the Bavarian Alps. From the castle, travelers can get an eyeful of the surrounding mountains, Alpine lakes and striking foliage.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/ece79f8/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/black_forest_main_445x280_gSzD0Jr.jpg" alt="img03" />
+                <figcaption>
+                    <h2>Black Forest</h2>
+                    <p>One of the best places to see Germany's natural splendor is the Black Forest. This section of Baden-Württemberg encompasses 99 miles of awe-inspiring landscapes, including rolling hills, stunning lakes, enchanting waterfall-filled forests and lengthy valleys dotted with charming villages. A great introduction to the Black Forest is driving along its scenic namesake highway (Schwarzwaldhochstrasse). You'll also want to save time for visiting gorgeous natural wonders like the Triberg Waterfalls.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/3fce2ee/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/mainz_main_445x280_w6tspwz.jpg" alt="img25" />
+                <figcaption>
+                    <h2>Mainz</h2>
+                    <p class="description">All wine lovers should make sure to visit Mainz when traveling to Germany. That's because Mainz is the country's wine capital. The city and the surrounding Rheinhessen area (Germany's largest wine-producing region) align themselves with other European wine hot spots – including Porto and Bordeaux – so there's no doubt that you'll find fantastic glasses of wine here. Plan on visiting Mainz's old town, where you'll find wine taverns that serve locally made varieties of riesling and silvaner. </p>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/87cdd09/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/frankfurt_main_445x280_plm5LBD.jpg" alt="img26" />
+                <figcaption>
+                    <h2>Frankfurt</h2>
+                    <p class="description">Frankfurt is best known as the financial capital of the eurozone thanks to it housing the European Central Bank, but don't assume the city is nothing more than a concrete jungle. Frankfurt doubles as a tourist-friendly destination with all kinds of attractions. Here, you'll find the Frankfurt Museum Embankment, a riverside perimeter that comprises more than a dozen museums, including the popular Städel Museum. Other noteworthy sights include the city's colorful old town, the Main Tower observation deck and the Palmengarten, a beautiful botanical garden.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/800c48a/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/leipzig_main_445x280_malERs9.jpg" alt="img09" />
+                <figcaption>
+                    <h2>Leipzig</h2>
+                    <p>Leipzig offers an array of attractions and activities (think: various museums, an impressive zoo and top-notch nightlife venues) to satisfy both residents and visitors. Prioritize visits to the Monument to the Battle of the Nations, which celebrates Napoleon Bonaparte's defeat and retreat from the city, and the Museum of Fine Arts, where you can admire thousands of centuries-old paintings. If you're a music lover, also save time for exploring the Leipzig Music Trail and seeing St. Thomas Church, which houses Johann Sebastian Bach's remains.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/26534e5/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/heidelberg_wwwvictoriawlakacom_m_445x280_ilIxGpx.jpg" alt="img10" />
+                <figcaption>
+                    <h2>Heidelberg</h2>
+                    <p>This city in southwestern Germany is well known for housing the country's oldest university. However, its good looks and superb location along the Neckar River also make it a great destination to enjoy historical character and a small-town ambiance. To see as much of this beautiful city as possible, take a long stroll through Heidelberg's old town and across its Old Bridge. Then, check out the Philosopher's Walk and ride the Königstuhl Funicular Railway.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="grid">
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/903da81/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/bonn_main_445x280_rw0stSH.jpg" alt="img09" />
+                <figcaption>
+                    <h2>Bonn</h2>
+                    <p>Classical music lovers will likely love visiting Bonn. Once the capital of Germany, Bonn attracts audiophiles interested in seeing Ludwig van Beethoven's birthplace. At the Beethoven-Haus, visitors can check out Beethoven's childhood home and the world's largest collection of Beethoven artifacts. Beyond Bonn's Beethoven-related sights, travelers will find Schloss Drachenburg (a fairy-tale structure that sits high above the city) and the Kunstmuseum Bonn (a contemporary art museum).</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sarah">
+                <img src="https://travel.usnews.com/dims4/USNEWS/53331c7/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/saxon_switzerland_national_park_main_445x280_QxcL7tA.jpg" alt="img10" />
+                <figcaption>
+                    <h2>Saxon Switzerland National Park</h2>
+                    <p>Saxon Switzerland National Park stands out for its collection of unique rock formations. You'll find the rocks, which come in various shapes and sizes, scattered throughout the park. Saxon Switzerland's most popular attraction is undoubtedly the Bastei Bridge, which is surrounded by stately formations and provides incredible views of the area. </p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+</body>
+</html>

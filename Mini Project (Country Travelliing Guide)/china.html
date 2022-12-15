@@ -1,0 +1,337 @@
+﻿<html>
+<head>
+    <title>| China  Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 800px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        /*---------------*/
+        /***** Sadie *****/
+        /*---------------*/
+
+        figure.effect-sadie figcaption::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+            background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+            content: '';
+            opacity: 0;
+            -webkit-transform: translate3d(0,50%,0);
+            transform: translate3d(0,50%,0);
+        }
+
+        figure.effect-sadie h2 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            color: #484c61;
+            -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+            transition: transform 0.35s, color 0.35s;
+            -webkit-transform: translate3d(0,-50%,0);
+            transform: translate3d(0,-50%,0);
+        }
+
+        figure.effect-sadie figcaption::before,
+        figure.effect-sadie p {
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+        }
+
+        figure.effect-sadie p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2em;
+            width: 100%;
+            opacity: 0;
+            -webkit-transform: translate3d(0,10px,0);
+            transform: translate3d(0,10px,0);
+        }
+
+        figure.effect-sadie:hover h2 {
+            color: #fff;
+            -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+            transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+        }
+
+        figure.effect-sadie:hover figcaption::before,
+        figure.effect-sadie:hover p {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+                word-spacing: normal;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">China .!</h1>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/wpimages/2021/01/china-best-places-to-visit-beijing-imperial-palace-forbidden-city.jpg" alt="img12" />
+                <figcaption>
+                    <div>
+                        <h2>Beijing: <span>  Home of the Imperial Palace and Forbidden City </span></h2>
+                        <p>Beijing is home to many of China's best-known attractions, including the spectacular Imperial Palace, also known as the Forbidden City. </p>
+                    </div>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/wpimages/2021/01/china-best-places-to-visit-xian-terracotta-army.jpg" alt="img1" />
+                <figcaption>
+                    <div>
+                        <h2>Historic Xi'an:  <span>The Terracotta Army and More</span></h2>
+                        <p>The bustling city of Xi'an, situated between the Weihe River in the north and the Qinling Mountains in the south, is one of Northwest China's chief textile centers. It also possesses more items of archaeological interest than perhaps any other city of its size in China. </p>
+                    </div>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/wpimages/2018/09/china-places-to-visit-hong-kong.jpg" alt="img02" />
+                <figcaption>
+                    <h2> Hong  <span> Kong</span></h2>
+                    <p>Hong Kong is, quite rightly, regarded as one of the world's most dynamic and exciting cities. While much of this can be attributed to its colonial past, it really owes its uniqueness to its rich mix of old and new China.</p>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/wpimages/2018/09/china-places-to-visit-guilin-and-yangshuo.jpg" alt="img14" />
+                <figcaption>
+                    <h2> Guilin <span>Yangshuo </span></h2>
+                    <p>No trip to China is complete without spending at least a little time enjoying a river cruise. One of the most popular options - and one that's perhaps best left to a professional tour company to organize on your behalf – is a cruise along the majestic Li River, which connects the two important cities of Guilin and Yangshuo.</p>
+                    <a href="#">Explore</a>
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/photos-large/CHN/china-towns-cities-shanghai.jpg" alt="img06" />
+                <figcaption>
+                    <h2>Shanghai</h2>
+                    <p>The largest city in China, Shanghai is famous for being the country's most modern metropolis and offers a diversity of tourist attractions old and new. Boasting in excess of 24 million citizens, the city's highlights include numerous world-class museums and art galleries.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/photos-large/CHN/china-towns-cities-chengdu.jpg" alt="img03" />
+                <figcaption>
+                    <h2>Chengdu</h2>
+                    <p>If, when you think of China, you think of pandas, you'll want to make sure the city of Chengdu is high on your list of must-sees. It's here you'll find the Chengdu Research Base of Giant Panda Breeding, a massive facility that is home to more than 80 of these wonderful animals.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/photos-large/CHN/ningbo.jpg" alt="img25" />
+                <figcaption>
+                    <h2>Ningbo and the Tianyi Ge Library</h2>
+                    <p class="description">Ningbo, located in the northeast corner of the province of Zhejiang just 25 kilometers from the East China Sea, has been one of the country's most important ports since the 7th century. Crisscrossed by countless navigable canals, this busy city is dubbed "Little Shanghai" and can trace its history back some 2,300 years to the period of the Qin Dynasty.</p>
+                </figcaption>
+            </figure>
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/wpimages/2021/01/china-best-places-to-visit-hangzhou-historic-grand-canal.jpg" alt="img26" />
+                <figcaption>
+                    <h2>Hangzhou</h2>
+                    <p class="description">Located at the southern end of China's famous 1,776-kilometer-long Grand Canal, a remarkable engineering feat and UNESCO World Heritage site, Hangzhou is one of China's most visited cities. As big a draw as this centuries-old canal, which connects Hangzhou to Beijing, is the city's picturesque location at the foot of a tall mountain range overlooking beautiful West Lake.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/wpimages/2021/01/china-best-places-to-visit-qufu-and-confucius.jpg" alt="img09" />
+                <figcaption>
+                    <h2>Qufu and<span> Confucius</span></h2>
+                    <p>Thanks to its connections with Confucius, China's most revered philosopher, the small town of Qufu in southwest Shandong has long been one of the country's most important places of pilgrimage. Not only was Confucius born here in 551 BC, he was also buried here in 479 BC. As a result, numerous temples and shrines have been erected by devotees in celebration of his life and teachings.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-sadie">
+                <img src="https://www.planetware.com/photos-large/CHN/china-zibo-ceramics.jpg" alt="img10" />
+                <figcaption>
+                    <h2>The City of Ceramics: <span> Zibo</span></h2>
+                    <p>Situated in the center of Shandong province, the city of Zibo was the capital of the Qi Empire for 630 years. During this time it became famous for its ceramics and lacquered works of art. It was in fact here that China's famous green glass was first developed some 1,500 years ago, as well as the region's distinctive black glazed porcelain.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+</body>
+</html>

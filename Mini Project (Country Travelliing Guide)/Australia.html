@@ -1,0 +1,336 @@
+﻿
+
+<html>
+<head>
+    <title>| Australia  Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 8000px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        /*---------------*/
+        /***** Milo *****/
+        /*---------------*/
+
+        figure.effect-milo {
+            background: #2e5d5a;
+        }
+
+            figure.effect-milo img {
+                max-width: none;
+                width: -webkit-calc(100% + 60px);
+                width: calc(100% + 60px);
+                opacity: 1;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(-30px,0,0) scale(1.12);
+                transform: translate3d(-30px,0,0) scale(1.12);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            figure.effect-milo:hover img {
+                opacity: 0.5;
+                -webkit-transform: translate3d(0,0,0) scale(1);
+                transform: translate3d(0,0,0) scale(1);
+            }
+
+            figure.effect-milo h2 {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em 1.2em;
+            }
+
+            figure.effect-milo p {
+                padding: 0 10px 0 0;
+                width: 50%;
+                border-right: 1px solid #fff;
+                text-align: right;
+                opacity: 0;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(-40px,0,0);
+                transform: translate3d(-50px,0,0);
+            }
+
+            figure.effect-milo:hover p {
+                opacity: 1;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+                word-spacing: normal;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">Australia .!</h1>
+    <div class="content">
+        <h2>
+            Australia's cultural and geographical scale is truly staggering to behold: an island nation with a coastline that is over 16,000 miles long and a population of Aboriginal people that are the inheritors of the longest continuous culture on earth. <br><br>
+
+            From rainforests teeming with wildlife and cosmopolitan cities, to some of the harshest living environments on the planet, this incredible country provides virtually every kind of travel experience needed to satisfy anyone's wanderlust. With such an overwhelming display of options and so much ground to cover, it's hard to know where to begin. We've compiled a list of 13 of the best places to visit in Australia to help channel your travel wishlist into action.
+        </h2>
+        <div class="grid">
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/6.%20Ryan%20Jones.jpg?auto=format&q=40&w=870&dpr=2" alt="img12" />
+                <figcaption>
+                    <div>
+                        <h2>Uluru</h2>
+                        <p>One of Australia's most recognized natural wonders, Uluru draws pilgrims from around the world like moths to a big red flame. No matter how many postcard images you have seen, nothing prepares you for the Rock's immense presence, character-pitted surface and spiritual gravitas. </p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/shutterstockRF_1291324354.jpg?auto=format&q=40&w=870&dpr=2" alt="img1" />
+                <figcaption>
+                    <div>
+                        <h2>Whitsundays</h2>
+                        <p>When the daily grind of life gets too much, most people imagine a beautiful tropical island lapped by clear blue water with nothing to ask of you but to relax a little more. When you arrive at the Whitsundays, you realize that place actually exists.  </p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/500pxRF_113358197.jpg?auto=format&q=40&w=870&dpr=2" alt="img02" />
+                <figcaption>
+                    <h2> Sydney</h2>
+                    <p>Sydney is immediately recognizable, with its iconic sights like Sydney Opera House, the Harbour Bridge lights glistening in the night and sun worshippers lying on its famous beaches. </p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/500pxRF_83805083.jpg?auto=format&q=40&w=870&dpr=2 " alt="img14" />
+                <figcaption>
+                    <h2>  Tasmania</h2>
+                    <p>Once overlooked by most Australians, Tasmania now finds itself at the center of a tourism boom. Young people are flocking back to the area to enjoy the multitude of cultural festivals on offer year round  wine, beer, art, food, music. </p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/shutterstockRF_745877467.jpg?auto=format&q=40&w=870&dpr=2" alt="img06" />
+                <figcaption>
+                    <h2>Byron Bay</h2>
+                    <p>Up there with kangaroos and Akubra hats, big-hearted Byron Bay (just Byron to its mates) is one of the enduring icons of Australian culture. Families on school holidays, surfers and sunseekers from across the globe gather by the foreshore at sunset, drawn to this spot by fabulous restaurants, a chilled pace of life and an astonishing range of activities.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/500pxRF_93046461.jpg?auto=format&q=40&w=870&dpr=2" alt="img03" />
+                <figcaption>
+                    <h2>Great Barrier Reef</h2>
+                    <p>The Great Barrier Reef is as fragile as it is beautiful. Stretching more than 1242 miles (2000km) along the Queensland coastline, it's a complex ecosystem populated with dazzling coral, languid sea turtles, gliding rays, timid reef sharks and tropical fish of every color and size. </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-milo">
+                <img src="https://www.margaretriverfindthefun.com.au/wp-content/uploads/2016/04/cape_nat1.jpg" alt="img25" />
+                <figcaption>
+                    <h2> Margaret River and Cape Naturaliste</h2>
+                    <p class="description">The decadent joy of drifting from winery to farm gate along eucalypt-shaded country roads is just one of the delights of Western Australia's southwest. </p>
+                </figcaption>
+            </figure>
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-02/500pxRF_107142941.jpg?auto=format&q=40&w=870&dpr=2" alt="img26" />
+                <figcaption>
+                    <h2> Great Ocean Road</h2>
+                    <p class="description">The Twelve Apostles  craggy rock formations jutting out of wild waters are one of Victoria's most vivid sights, but it's the “getting there” road trip that doubles their impact. </p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-06/LPT0119_056.jpg?auto=format&q=40&w=870&dpr=2" alt="img09" />
+                <figcaption>
+                    <h2>Melbourne</h2>
+                    <p>Why the queue? Oh, that's just the line to get into the latest “no bookings” restaurant in Melbourne. The next best restaurant, chef, cafe, barista, hidden bar may be the talk of the town, but there are things locals would never change.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-milo">
+                <img src="https://lp-cms-production.imgix.net/2021-01/GettyRF_89268771.jpg?auto=format&q=40&w=870&dpr=2" alt="img10" />
+                <figcaption>
+                    <h2>Pinnacles Desert         </h2>
+                    <p>It could be mistaken for the surface of Mars, but scattered among the dunes of Nambung National Park, thousands of ghostly limestone pillars rise from the surrounding plain like a vast, petrified alien army. One of the west's most bizarre landscapes.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+</body>
+</html>

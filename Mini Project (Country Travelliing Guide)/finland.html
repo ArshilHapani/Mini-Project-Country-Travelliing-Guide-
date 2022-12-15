@@ -1,0 +1,384 @@
+﻿<html>
+<head>
+    <title>| Finland  Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 800px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        /*---------------*/
+        /***** Layla *****/
+        /*---------------*/
+
+        figure.effect-layla {
+            background: #18a367;
+        }
+
+            figure.effect-layla img {
+                height: 390px;
+            }
+
+            figure.effect-layla figcaption {
+                padding: 3em;
+            }
+
+                figure.effect-layla figcaption::before,
+                figure.effect-layla figcaption::after {
+                    position: absolute;
+                    content: '';
+                    opacity: 0;
+                }
+
+                figure.effect-layla figcaption::before {
+                    top: 10px;
+                    right: 30px;
+                    bottom: 10px;
+                    left: 30px;
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    -webkit-transform: scale(0,1);
+                    transform: scale(0,1);
+                    -webkit-transform-origin: 0 0;
+                    transform-origin: 0 0;
+                }
+
+                figure.effect-layla figcaption::after {
+                    top: 10px;
+                    right: 30px;
+                    bottom: 10px;
+                    left: 30px;
+                    border-right: 1px solid #fff;
+                    border-left: 1px solid #fff;
+                    -webkit-transform: scale(1,0);
+                    transform: scale(1,0);
+                    -webkit-transform-origin: 100% 0;
+                    transform-origin: 100% 0;
+                }
+
+            figure.effect-layla h2 {
+                padding-top: 1%;
+                -webkit-transition: -webkit-transform 0.35s;
+                transition: transform 0.35s;
+            }
+
+            figure.effect-layla p {
+                padding: 0.3em 0.3em;
+                text-transform: none;
+                opacity: 0;
+                -webkit-transform: translate3d(0,-10px,0);
+                transform: translate3d(0,-10px,0);
+                background-color: rgba(80, 80, 79, 0.5);
+            }
+
+            figure.effect-layla img,
+            figure.effect-layla h2 {
+                -webkit-transform: translate3d(0,-30px,0);
+                transform: translate3d(0,-30px,0);
+            }
+
+            figure.effect-layla img,
+            figure.effect-layla figcaption::before,
+            figure.effect-layla figcaption::after,
+            figure.effect-layla p {
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+            }
+
+            figure.effect-layla:hover img {
+                opacity: 0.7;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+            figure.effect-layla:hover figcaption::before,
+            figure.effect-layla:hover figcaption::after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            figure.effect-layla:hover h2,
+            figure.effect-layla:hover p {
+                opacity: 1;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+            figure.effect-layla:hover figcaption::after,
+            figure.effect-layla:hover h2,
+            figure.effect-layla:hover p,
+            figure.effect-layla:hover img {
+                -webkit-transition-delay: 0.15s;
+                transition-delay: 0.15s;
+            }
+
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+                word-spacing: normal;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">Finland .!</h1>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/levi.jpg" alt="img12" />
+                <figcaption>
+                    <div>
+                        <h2>Levi</h2><br>
+                        <p>With so much unspoiled landscape, Finland is a nature lover dream destination. For outdoor enthusiasts, winter resort of Levi is undoubtedly a top pick for fun. Located in Finnish Lapland, Levi boasts miles of trails for skiing and snowboarding. There are also opportunities for more unusual activities such as reindeer safaris, ice fishing expeditions and relaxing in large outdoor saunas. The nightlife in Levi is a major draw for Finnish residents. </p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/tampere.jpg" alt="img1" />
+                <figcaption>
+                    <div>
+                        <h2>Tampere</h2><br>
+                        <p>It feels more like a collection of neighborhoods than a major metropolis. check out the Vapriikki, a museum complex housing the Natural History Museum and the Finnish Hockey Hall of Fame,among others. Outdoor recreation like skiing and hockey are incredibly popular in Tampere, but the less athletically inclined can settle for a stroll through outdoor hubs like Duck Park or the Hatanpää Arboretum.</p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/aland_archipelago.jpg" alt="img02" />
+                <figcaption>
+                    <h2> Aland Archipelago</h2><br>
+                    <p>In the heart of the Baltic Sea is a collection of islands known as the Aland Archipelago. While they technically do belong to Finland, the islands run relatively autonomously. Unusually, this is one part of Finland where you are more likely to hear residents speaking Swedish than Finnish! Ferries shuttle visitors between the Aland Islands,offering you the chance to see attractions like the ship turned museum called the Pommern, the Aland Maritime Museum. </p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/kemi.jpg" alt="img14" />
+                <figcaption>
+                    <h2> Kemi </span></h2><br>
+                    <p>Industrially, Kemi is a city in Finnish Lapland that is known best for its pulp mills. Travelers, however, know Kemi best as the location of the iconic snow castle. The castle is built yearly, and it can be three stories tall and serve as the venue for weddings and live musical performances. Guests can even stay overnight in the snow hotel, should they choose! Kemi also has a bustling nightlife scene.</p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/finnish_lakeland.jpg" alt="img06" />
+                <figcaption>
+                    <h2> Finnish Lakeland</h2><br>
+                    <p>As the name suggests, Finnish Lakeland is as area of Finland where there is an abundance of lakes. There are about 55,000 lakes here that are at least 200 meters (660 feet) wide! The region is spread across central and eastern Finland, and it is bound by the stunning Salpausselkä Ridges as well as the Russian border.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/turku.jpg" alt="img03" />
+                <figcaption>
+                    <h2> Turku</h2><br>
+                    <p>Along the coast of Southern Finland is Turku, a city that served as the capital of Finland for much of the 19th century and is also believed to be the oldest in the nation. Although Helsinki has long since taken over as the capital, Turku is still a major destination in Finland, and it is home to countless historic attractions and cultural landmarks.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/porvoo.jpg" alt="img25" />
+                <figcaption>
+                    <h2> Porvoo</h2><br>
+                    <p>The second-oldest town in all of Finland is Porvoo, a destination known for its unique and picturesque wooden homes. As you stroll through the cobblestone streets of Old Porvoo, known to locals as Vanha Porvoo.</p>
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/savonlinna.jpg" alt="img26" />
+                <figcaption>
+                    <h2>Savonlinna</h2><br>
+                    <p>A small city in the heart of Finnish Lakeland, Savonlinna is a charming historic destination worth a visit on your next trip to Finland. Located in the middle of Lake Saimma on a series of islands, the area biggest attraction is unquestionably Olavinlinna, or St. Olaf Castle, which was built in the 15th century. </p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/rovaniemi.jpg" alt="img09" />
+                <figcaption>
+                    <h2> Rovaniemi</h2><br>
+                    <p>If you want to experience the beauty of Lapland, then Rovaniemi is the ultimate gateway to it all. The capital of Finnish Lapland, Rovaniemi was completely destroyed at the end of the Second World War. As a result, much of the architecture is mid-century and brutalist in design. While Rovaniemi is home to a number of wonderful attractions.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-layla">
+                <img src="https://www.touropia.com/gfx/d/best-places-to-visit-in-finland/helsinki.jpg" alt="img10" />
+                <figcaption>
+                    <h2>Helsinki</h2><br>
+                    <p>As the country capital, Helsinki is the most popular place to visit in Finland and a destination you won't want to miss. If Helsinki looks a lot like St. Petersburg, it is because it was built to replicate the Russian city's style in 1812. </p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+</body>
+</html>

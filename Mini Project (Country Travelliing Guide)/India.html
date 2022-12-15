@@ -1,0 +1,374 @@
+﻿<html>
+<head>
+    <title>| India  Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 800px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        /* Individual effects */
+
+        /*---------------*/
+        /***** Lily *****/
+        /*---------------*/
+
+        figure.effect-lily img {
+            max-width: none;
+            width: -webkit-calc(100% + 50px);
+            width: calc(100% + 50px);
+            opacity: 0.7;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(-40px,0, 0);
+            transform: translate3d(-40px,0,0);
+        }
+
+        figure.effect-lily figcaption {
+            text-align: left;
+        }
+
+            figure.effect-lily figcaption > div {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 2em;
+                width: 100%;
+                height: 50%;
+            }
+
+        figure.effect-lily h2,
+        figure.effect-lily p {
+            -webkit-transform: translate3d(0,40px,0);
+            transform: translate3d(0,40px,0);
+        }
+
+        figure.effect-lily h2 {
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+        }
+
+        figure.effect-lily p {
+            color: rgba(255,255,255,0.8);
+            opacity: 0;
+            padding: 0.3em;
+            -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+            transition: opacity 0.2s, transform 0.35s;
+        }
+
+        figure.effect-lily:hover img {
+            opacity: 0.5;
+            overflow: hidden;
+            background-color: rgba(66, 63, 63, 0.7);
+        }
+
+        figure.effect-lily:hover p {
+            opacity: 1;
+            background-color: rgba(80, 80, 79, 0.5);
+        }
+
+        figure.effect-lily:hover img,
+        figure.effect-lily:hover h2,
+        figure.effect-lily:hover p {
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        figure.effect-lily:hover p {
+            -webkit-transition-delay: 0.05s;
+            transition-delay: 0.05s;
+            -webkit-transition-duration: 0.35s;
+            transition-duration: 0.35s;
+        }
+
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">India the land of GODS .!</h1>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/ladakh.jpg" alt="img12" />
+                <figcaption>
+
+                    <h2>Ladakh: </h2><br>
+                    <p> The land of high mountain passes, barren mountains, alpine lakes & meadows, enchanting valleys and ancient colourful Buddhist monasteries, Ladakh is one of the must-visit destinations in India.  It is ideal for adventure enthusiasts and nature lovers alike.</p>
+
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/Delhi.jpg" alt="img1" />
+                <figcaption>
+
+                    <h2>Delhi:<span> For its incredible history and past</span></h2><br>
+                    <p> The capital city makes for one of the perfect travel destinations in India. A city of heritage, monuments, teeming with bazaars and mouth-watering street food, high-end malls, and luxury hotels & restaurants; Delhi has something for everyone. So whether you are looking for a heritage walk or a shopping experience or for kids-friendly activities or places for photography or even seek the blessings of god, Delhi will not disappoint.</p>
+
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="https://imgs.search.brave.com/FKoLgvi6eB8BstjcNv3hR_DVO41zeTB8AK_3KXn8vdA/rs:fit:1024:768:1/g:ce/aHR0cDovL2Fkc3Qu/b3JnL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE0LzA3L2thc2ht/aXItdmFsbHkxLmpw/Zw" alt="img02" />
+                <figcaption>
+                    <h2>Jammu & <span> Kashmir</span></h2><br>
+                    <p>One of the most incredible places in India, Kashmir is known for its natural beauty and is thus, rightly called Heaven on Earth. With its picturesque lakes, lush fruit orchards, verdant meadows, pines and deodars forests, all enclosed with mountains of Himalayan and Pir-Panjal ranges – Kashmir seems to have directly made its way right out from a postcard.</p>
+                    <a href="#">Explore</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="https://imgs.search.brave.com/D6L6w22M-RsJvXBeq0ZijGn30NeTmm70bUoz0Eu6rJg/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi80LzQzL1pl/cm9fUG9pbnRfYXRf/U2lra2ltLmpwZy8x/MDI0cHgtWmVyb19Q/b2ludF9hdF9TaWtr/aW0uanBn" alt="img14" />
+                <figcaption>
+                    <h2>Sikkim: <span>For its breathtaking natural vistas and enthralling adventures</span></h2><br>
+                    <p>One of the most beautiful places in India, Sikkim is a glittering gem of the North-East Himalayas. This northeast Indian destination is popular for being home to the world’s third highest mountain, Kanchenjunga (8586 m). Sikkim is one of the best destinations in India to spend a peaceful and laid back holiday as well as enjoy enthralling adventure activities.</p>
+                    <a href="#">Explore</a>
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/Meghalaya-Shillong.jpg" alt="img06" />
+                <figcaption>
+                    <h2>Meghalaya:  <span>For its spellbinding natural beauty </span></h2><br>
+                    <p>Also known as the abode of clouds, Meghalaya is a hidden gem nestled in the lap of pine-covered Khasi and Garo Hills in the Northeastern part of India. One of the most picturesque states of North East India with its innumerable waterfalls, mystic caves, dense forests and sparkling lakes and rivers; Meghalaya is an ideal destination in India for trekkers, cavers/spelunkers and nature lovers.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/Kerala-Houseboat-in-backwater-of-Kerala.jpg" alt="img03" />
+                <figcaption>
+                    <h2>Kerala:  <span>For its backwaters, beaches & culture</span></h2><br>
+                    <p>Pristine backwaters, coconut-palm fringed beaches, rejuvenating Ayurvedic massages and colourful festivals; Yes! You guessed it right. I am talking about God’s own country, Kerala. One of the most picturesque places in India with a footfall of thousands of tourists every year, Kerala is tucked between Arabian Sea and the Western Ghats and is blessed with immense natural beauty.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/andaman.jpg" alt="img25" />
+                <figcaption>
+                    <h2>Andaman:  <span>For its pristine beauty and array of water sports</span></h2><br>
+                    <p class="description">Known for their picturesque landscape comprising pristine beaches, azure waters and verdant forests, Andaman & Nicobar are a group of more than 500 islands situated in an infinite expanse of the Bay of Bengal. Packed with an array of interesting activities, Andaman & Nicobar is indeed one of the best beach destinations in India.</p>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/Goa-Paragliding-in-Goa.jpg" alt="img26" />
+                <figcaption>
+                    <h2>Goa: <span> For its beaches, world-heritage churches, food & nightlife</span></h2><br>
+                    <p class="description">Known for its gorgeous beaches, stellar nightlife, delish seafood, world-heritage listed monuments, Goa is where all the fun is in India. Although the beaches of Goa are the primary tourism attractions, there are many surprises waiting to be unravelled.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/agra-taj-mahal.jpg" alt="img09" />
+                <figcaption>
+                    <h2>Agra, Uttar Pradesh: <span> For its unprecedented Mughal grandeur</span></h2><br>
+                    <p>Home to the symbol of love, Taj Mahal, Agra in Uttar Pradesh finds its spot on the world heritage map.  With its three gems, the impressive Taj Mahal, magnificent Agra Fort and splendid Fatehpur Sikri; the city charms thousands of tourists including historians and art lovers from all across India and the world.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/varanasi.jpg" alt="img10" />
+                <figcaption>
+                    <h2>Varanasi, Uttar Pradesh:<span> For its spiritual essence</span></h2><br>
+                    <p>
+                        Exploration of India remains incomplete without a trip to the holy city of Varanasi in Uttar Pradesh. Also known as the city of Moksha (salvation), the place holds a great religious significance for the Hindus.
+
+                        Situated on the banks of sacred river Ganga, the city is believed to be more than 5000 years old. Bustling with enchanting ancient temples and holy Ghats crowded with people performing various rituals and prayers, Varanasi makes for an ultimate spiritual travel destination India.
+                    </p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/jaisalmer-desert-camel-safari.jpg" alt="img11" />
+                <figcaption>
+                    <h2>Jaisalmer, Rajasthan:  <span>For its Rajputana magnificence desert activities</span></h2><br>
+                    <p>the Land of the Golden Sand, Jaisalmer in Rajasthan is a beautiful city known for its rich cultural heritage and tales of brave Rajput rulers. This popular tourist destination is flanked by the expansive Thar Desert. Jaisalmer offers an authentic experience of Rajasthani culture, traditions, and heritage with its magnificent Sonar Quila or the Jaisalmer Fort, havelis, delectable food, and camel safari opportunity in the desert.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <figure class="effect-lily">
+                <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/07/Shimla-in-Monsoon.jpg" alt="img12" />
+                <figcaption>
+                    <h2>Shimla  <span>Mesmerizing Queen of hills</span></h2><br>
+                    <p>Decked with green hills at an altitude of 2,205 meters, the erstwhile summer capital of British India is one of the most popular hill stations and favorite destination in India. You will witness the beauty of Pine and Oak forests, steep hillsides, colonial buildings, colorful markets and stunning Lamp Posts makes this place quite gorgeous to capture in your lens. honeymooners, nature lovers and families throughout the year visit Shimla at least once. </p>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+</body>
+</html>

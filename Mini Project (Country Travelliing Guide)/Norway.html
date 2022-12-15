@@ -1,0 +1,374 @@
+﻿<html>
+<head>
+    <title>| Norway  Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 800px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        .title {
+            align-items: center;
+            word-spacing: 3px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        /*---------------*/
+        /***** Zoe *****/
+        /*---------------*/
+
+        figure.effect-zoe figcaption {
+            top: auto;
+            bottom: 0;
+            padding: 1em;
+            height: 3.75em;
+            background: #fff;
+            color: #3c4a50;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+        }
+
+        figure.effect-zoe h2 {
+            float: left;
+        }
+
+        figure.effect-zoe:hover p.icon-links a:hover,
+        figure.effect-zoe:hover p.icon-links a:focus {
+            color: #252d31;
+        }
+
+        figure.effect-zoe p.description {
+            position: absolute;
+            bottom: 5.3em;
+            right: 0px;
+            padding: 2.5em;
+            color: #fff;
+            text-transform: none;
+            font-size: 70%;
+            background-color: rgba(80, 80, 79, 0.5);
+            opacity: 0;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+
+        figure.effect-zoe h2 {
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0,200%,0);
+            transform: translate3d(0,200%,0);
+        }
+
+
+        figure.effect-zoe h2 {
+            display: inline-block;
+        }
+
+        figure.effect-zoe:hover p.description {
+            opacity: 1;
+        }
+
+        figure.effect-zoe:hover figcaption,
+        figure.effect-zoe:hover h2 {
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        figure.effect-zoe:hover h2 {
+            -webkit-transition-delay: 0.05s;
+            transition-delay: 0.05s;
+        }
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url("https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+                word-spacing: normal;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">Norway .!</h1>
+    <h3 class="title">
+        The essence of Norway's appeal is remarkably simple: this is one of the most beautiful countries on earth. Impossibly steep-sided Norwegian fjords of extraordinary beauty cut gashes from a jagged coastline deep into the interior. Elsewhere, the mountainous terrain of Norway's interior resembles the ramparts of a natural fortress.
+        Wherever you find yourself in Norway, these landscapes serve as a backdrop for some of Europe's prettiest villages. Here are the must-visit places on your trip to Norway.
+    </h3>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-04/GettyRF_588880345.jpg?auto=format&q=40&w=870&dpr=2" alt="img12" />
+                <figcaption>
+                    <div>
+                        <h2>Geirangerfjord</h2><br>
+                        <p class="Description">
+                            The 12-mile (20km) chug along Geirangerfjord, a Unesco World Heritage site, must rank as the world's loveliest ferry journey. Long-abandoned farmsteads still cling to the fjord's near-sheer cliffs while ice-cold cascades tumble, twist and gush down to emerald-green waters. Take it from Geiranger and enjoy the calm as you leave the heaving port or hop aboard at quieter Hellesylt. Prime your camera, grab a top-deck open-air seat and enjoy what's literally the only way to travel Geirangerfjord's secluded reaches.
+                        </p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2020-12/GettyRF_1166906300.jpg?auto=format&q=40&w=870&dpr=2" alt="img1" />
+                <figcaption>
+                    <div>
+                        <h2>Lofoten Islands</h2><br>
+                        <p class="Description">Few visitors forget their first sighting of the Lofoten Islands. The jagged ramparts of this astonishing island chain rise abruptly from the sea in summer greens and yellows or the stark blue and white of winter, their razor-sharp peaks stabbing at a clear, cobalt sky or shrouded mysteriously in swirling mists. Postcard-perfect villages with wooden rorbuer (fishing huts) cling to the shoreline, while the A-frame racks for drying fish tell of a land and a culture intimately entwined with the sea.</p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-04/GettyImages-520052630.jpg?auto=format&q=40&w=870&dpr=2" alt="img02" />
+                <figcaption>
+                    <h2> Kirkenes</h2><br>
+                    <p class="Description">
+                        So much more than merely a means of getting around, the iconic Hurtigruten coastal ferry takes you on one of the most spectacular coastal journeys anywhere on earth. On its daily path between Bergen and Kirkenes, it dips into coastal fjords, docks at isolated villages barely accessible by road, draws near to dramatic headlands and crosses the Arctic Circle only to return a few days later. In the process, it showcases the entire length of Norway's most glorious coast.
+                    </p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-04/GettyRF_491392484.jpg?auto=format&q=40&w=870&dpr=2" alt="img14" />
+                <figcaption>
+                    <h2> Bergen </span></h2><br>
+                    <p class="Description">Set amid a picturesque and very Norwegian coastal landscape of fjords and mountains, Bergen is one of Europe's most beautiful cities. A celebrated history of seafaring trade has bequeathed to the city the stunning (and Unesco World Heritage-listed) waterfront district of Bryggen, an archaic tangle of wooden buildings. A signpost to a history at once prosperous and tumultuous, the titled and colorful wooden buildings of Bryggen now shelter the artisan boutiques and traditional restaurants for which the city is increasingly famous.</p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-04/GettyRF_512829837.jpg?auto=format&q=40&w=870&dpr=2" alt="img06" />
+                <figcaption>
+                    <h2> Jotunheimen National Park</h2><br>
+                    <p class="Description">The high country of central Norway ranks among Europe's premier summer destinations. Although there are numerous national parks crisscrossed by well-maintained hiking trails, it's Jotunheimen National Park, whose name translates as "Home of the Giants," that rises above all others. With 60 glaciers and 275 summits over 6560ft high (2000m), Jotunheimen is exceptionally beautiful and home to iconic trails such as Besseggen, Hurrungane and those in the shadow of Galdhøpiggen, Norway's highest peak.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2020-10/LPT1217_112.jpg?auto=format&q=40&w=870&dpr=2" alt="img03" />
+                <figcaption>
+                    <h2>Svalbard</h2><br>
+                    <p class="Description">The subpolar archipelago of Svalbard is a true place of the heart. Deliciously remote and yet surprisingly accessible, Svalbard is Europe's most evocative slice of the polar north and one of the continent's last great wilderness areas. Shapely peaks, massive icefields (60% of Svalbard is covered by glaciers) and heartbreakingly beautiful fjords provide the backdrop for a rich array of Arctic wildlife. It's no wonder that Svalbard is packed with summer and winter activities that get you out amid the ringing silence of the snows.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-zoe">
+                <img src="https://alchetron.com/cdn/notodden-cd219062-5f31-47d6-8046-2e40c0d3219-resize-750.jpeg" alt="img25" />
+                <figcaption>
+                    <h2>Notodden</h2><br>
+                    <p class="Description">All over southern and central Norway you'll come across wooden stave churches. They come in all forms, from the monumental to the pocket-sized and cute. The stave churches of Norway, many of which come enveloped in stories of trolls and are adorned with fantastically carved creatures, are without doubt the very definition of fairy-tale churches, none more so than the spectacular Heddal Stave Church in Notodden.In the process, it showcases the entire length of Norway's most glorious coast.</p>
+                </figcaption>
+            </figure>
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-04/500pxRF_80109271.jpg?auto=format&q=40&w=870&dpr=2" alt="img26" />
+                <figcaption>
+                    <h2>Ålesund</h2><br>
+                    <p class="Description">Snug, tidy Ålesund owes much of its charm to a devastating fire that ripped through its wooden structures a century ago, destroying everything except the jail and a church. From its ashes rose a brand new town, mostly of stone and mostly designed by young Norwegian architects who had trained in Germany. Strongly influenced by the Jugendstil (art nouveau) movement of the time, they designed buildings rich in ornamentation, with turrets, spires, gargoyles and other fanciful elements based on local motifs.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-zoe">
+                <img src="https://thumbs.dreamstime.com/z/tromso-norway-view-arctic-city-traditional-wooden-houses-winter-travel-norway-tromso-norway-view-arctic-city-201398090.jpg" alt="img09" />
+                <figcaption>
+                    <h2> Tromsø</h2><br>
+                    <p class="Description">
+                        Tromsø, a cool 250 miles (400km) north of the Arctic Circle, is northern Norway's most significant city with, among other superlatives, the world's northernmost cathedral, brewery and botanical garden. Its busy clubs and pubs – more per capita than in any other Norwegian town – owe much to the university (another northernmost) and its students. In summer, Tromsø's a base for round-the-clock, 24-hour daylight activity. Once the first snows fall, the locals slip on their skis or snowshoes, head out of town and gaze skywards for a glimpse of the Northern Lights.
+
+                    </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-04/shutterstockRF_467543609.jpg?auto=format&q=40&w=870&dpr=2" alt="img10" />
+                <figcaption>
+                    <h2>Karasjok</h2><br>
+                    <p class="Description">
+                        Snowmobiles have ousted sleds and nowadays only a minority of Sami live from their reindeer herds or coastal fishing. But the Sami culture, transcending the frontiers of Norway, Sweden and Finland, lives on and is increasingly accessible to visitors, especially in Karasjok, where the Sami Parliament is a masterpiece of traditional design in mellow wood. Sami identity lies secure in the language and its dialects, traditions such as the joik (a continuously droned rhythmic poem), and handicrafts such as silversmithing and knife making.
+
+                    </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <div class="grid">
+            <figure class="effect-zoe">
+                <img src="https://lp-cms-production.imgix.net/2021-10/GettyRF_531511051.jpg?auto=format&q=40&w=870&dpr=2" alt="img09" />
+                <figcaption>
+                    <h2>Oslo</h2><br>
+                    <p class="Description">Oslo is reinventing itself. This capital city is aiming to become nothing less than a world-renowned center of art and culture. It's already bursting at the seams with top-notch museums, art galleries and a glacier-white opera house that could make even Sydney jealous, but in the past couple of years it has achieved a striking rebirth of its waterfront district complete with daring architecture, a grade-A modern-art gallery, new restaurants and even a beach. Oslo is a city on the rise and is definitely one to watch.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <h2></h2>
+</body>
+</html>

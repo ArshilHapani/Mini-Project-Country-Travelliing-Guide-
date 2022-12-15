@@ -1,0 +1,392 @@
+﻿<html>
+<head>
+    <title>| Maldives Page |</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,400;1,800&display=swap');
+
+        .main-title {
+            color: #000000;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .grid {
+            position: relative;
+            margin: 10% auto;
+            padding: 1em 0 4em;
+            max-width: 1000px;
+            max-height: 800px;
+            list-style: none;
+            text-align: center;
+        }
+
+            /* Common style */
+            .grid figure {
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 30px 1%;
+                min-width: 320px;
+                max-width: 480px;
+                max-height: 300px;
+                min-height: 298px;
+                width: 48%;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                .grid figure img {
+                    position: relative;
+                    display: block;
+                    min-height: 100%;
+                    max-width: 100%;
+                    opacity: 0.8;
+                }
+
+                .grid figure figcaption {
+                    padding: 2em;
+                    color: #fff;
+                    font-size: 1.25em;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    word-spacing: 1px;
+                }
+
+                    .grid figure figcaption::before,
+                    .grid figure figcaption::after {
+                        pointer-events: none;
+                    }
+
+                    .grid figure figcaption,
+                    .grid figure figcaption > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        /* Anchor will cover the whole item by default */
+                        /* For some effects it will show as a button */
+                        .grid figure figcaption > a {
+                            z-index: 1000;
+                            text-indent: 200%;
+                            white-space: nowrap;
+                            font-size: 0;
+                            opacity: 0;
+                        }
+
+                .grid figure h2 {
+                    word-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    .grid figure h2 span {
+                        font-weight: 800;
+                    }
+
+                .grid figure h2,
+                .grid figure p {
+                    margin: 0;
+                }
+
+                .grid figure p {
+                    letter-spacing: 1px;
+                    font-size: 68.5%;
+                }
+
+        .title {
+            align-items: center;
+            word-spacing: 3px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        /*---------------*/
+        /***** Marley *****/
+        /*---------------*/
+
+        figure.effect-marley figcaption {
+            text-align: right;
+        }
+
+        figure.effect-marley h2,
+        figure.effect-marley p {
+            position: absolute;
+            right: 30px;
+            left: 30px;
+            padding: 10px 0;
+        }
+
+
+        figure.effect-marley p {
+            bottom: 30px;
+            line-height: 1.5;
+            background-color: rgba(80, 80, 79, 0.6);
+            padding-left: 3px;
+            padding-right: 3px;
+            -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+        }
+
+        figure.effect-marley h2 {
+            top: 30px;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+        }
+
+        figure.effect-marley:hover h2 {
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        figure.effect-marley h2::after {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #fff;
+            content: '';
+            -webkit-transform: translate3d(0,40px,0);
+            transform: translate3d(0,40px,0);
+        }
+
+        figure.effect-marley h2::after,
+        figure.effect-marley p {
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+        }
+
+        figure.effect-marley:hover h2::after,
+        figure.effect-marley:hover p {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .clearfix:before, .clearfix:after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        body {
+            background: #2f3238;
+            background-image: url(https://images.unsplash.com/photo-1567201864585-6baec9110dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHdoaXRlJTIwdGFibGUlMjBwbGFuJTIwdmVydGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-size: 1em;
+            font-family: 'Raleway', Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        a {
+            outline: none;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover, a:focus {
+                color: #528cb3;
+            }
+
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+            .content > h2 {
+                clear: both;
+                margin: 0;
+                padding: 4em 1% 0;
+                color: #484B54;
+                font-weight: 800;
+                font-size: 1.5em;
+                word-spacing: normal;
+            }
+
+                .content > h2:first-child {
+                    padding-top: 0em;
+                }
+
+        @media screen and (max-width: 25em) {
+            .codrops-header {
+                font-size: 75%;
+            }
+
+            .codrops-icon span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1 class="main-title">Maldives </h1>
+    <h3 class="title">Unbeatable beaches, unmatched luxury and a very happening underwater world makes Maldives worth it all! Endowed with incredible beauty and splendor of nature. With 1200 islands and 26 atolls, this island country holds a great allure for tourists across the globe for its exotic islands, enthralling blue seas, shiny-sandy beaches, magnificent reefs, and a variety of water sports. Being an island country dominated by water sports, the tourism here is strictly relative to the dry weather conditions and hence the span of December to April is the best time to visit Maldives. Maldives has also undergone drastic change in the last 10 years and the inhabited islands have been made better and tourist friendly. Studded with luxurious water villas and endless palm groves swaying rhythmically, this postcard-perfect amalgamation of blue, white, and green is a true paradise on Earth! Check out the best places to visit in Maldives on your vacations:</h3>
+    <div class="content">
+        <h2></h2>
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/10/Mal%C3%A9-Maldives.jpg" alt="img12" />
+                <figcaption>
+                    <div>
+                        <h2>Male Atoll -  For Urban Vibes</h2><br>
+                        <p class="Description">Located on the southern edge of Kaafu Atoll, the North Malé Atoll is the largest city and the most popular destination among the best places to visit in Maldives. It is among the top Maldives tourism places. It used to be called Mahal for being the abode of the Royal Dynasties and is now famous as the Kings Island.</p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Sun-Island-Nalaguraidhoo.jpg" alt="img1" />
+                <figcaption>
+                    <div>
+                        <h2>Sun Island</h2><br>
+                        <p class="Description">Also famous as the Sun Island, Nalaguraidhoo Island in South Ari Atoll is among the top Maldives points of interest. It is adorned with some stunning beaches, beautiful tropical flowers, and lavish greenery that pulls a great number of tourists wanting to bask in the lap of nature. </p>
+                    </div>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Banana-Reef.jpg" alt="img02" />
+                <figcaption>
+                    <h2> Banana Reef</h2><br>
+                    <p class="Description">Located in North Mal- Atoll, Banana Reef is globally renowned for being one of the best diving sites in the world which adds it to the list of top Maldives points of interest. It was, in fact, the very first diving spot in Maldives to get recognition for licensed diving and training. Shaped like a banana, the reef is choc-a-block with exuberant marine life, fantastic corals, amazing cliffs, overhangs, and caves.</p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Alimatha-Island-Vaavu-Atoll.jpg" alt="img14" />
+                <figcaption>
+                    <h2>Alimatha Island </h2><br>
+                    <p class="Description">Sitting on the eastern edge of Maldives, Alimatha Island is located in Vaavu Atoll. With its azure, crystal clear waters — apt for diving, snorkeling and boating, the island is a perfect spot for a family vacation and for honeymoon too, since it is considered one of the best places to visit in Maldives for couples. Volleyball matches in the sun-kissed beaches and the dazzling sand, here, are great fun.</p>
+                    <!-- <a href="#">Explore</a> -->
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Artificial-Beach.jpg" alt="img25" />
+                <figcaption>
+                    <h2>  Artificial Beach </h2><br>
+                    <p class="Description">Situated in North Mal- Atoll, this beach is what its name tells you – artificial. It is the favorite haunt of the swimming enthusiasts among the top places to visit in Maldives. The Artificial Beach is an open area and has certain restrictions for clothing as per the local law. The beach also hosts several carnivals, water sports, and peaceful walks, making this the best place to go in Maldives for youngsters.</p>
+                </figcaption>
+            </figure>
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/HP-Reef.jpg" alt="img26" />
+                <figcaption>
+                    <h2>HP Reef</h2><br>
+                    <p class="Description">Stationed in North Mal- Atoll, HP Reef is among the top-rated tourist attractions in Maldives. It is a protected marine location that witnesses the widespread presence of a variety of marine creatures. From small, harmful and colorful fishes to multi-hued corals, caves and overhangs — the sea here is bustling with the vivacity of marine life.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Fihalhohi-Island.jpg" alt="img09" />
+                <figcaption>
+                    <h2>Fihalhohi Island</h2><br>
+                    <p class="Description">Fihalhohi Island, situated at the South Kaafu Atoll in Mal-, is one of the most attractive and gorgeous places in Maldives to spend your hard earned holidays. The island is beautifully surrounded with shady coconut palm trees, pristine beaches, and clear waters. You must visit this island if you are looking for a romantic getaway or planning your honeymoon. </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Utheemu-Ganduvaru.jpg" alt="img10" />
+                <figcaption>
+                    <h2>Utheemu Ganduvaru</h2><br>
+                    <p class="Description">Located in the Northern part of Maldives, Utheemu is one of the best places to visit in Maldives. It is a small island that resembles a small green jellyfish. One of the historical significant tourist places in Maldives, it is the birthplace of Sultan Mohamed Thakurufaanu — revered in Maldivian history for chasing away Portuguese intruders. </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Biyadhoo-Island-resort.jpg" alt="img09" />
+                <figcaption>
+                    <h2>  Biyadhoo Island </h2><br>
+                    <p class="Description">Another popular island among the best places to visit in Maldives, Biyadhoo Island is stationed in South Mal- Atoll. Spread over ten acres of land, it is around 18 miles away from South Mal- International Airport and has Makunufushi Island in close proximity. The island has abundant vegetation of bananas, coconuts, and mangoes along with cucumbers, cabbage, and tomatoes. </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Veligandu-Island-Beach.jpg" alt="img09" />
+                <figcaption>
+                    <h2> Veligandu Island Beach</h2><br>
+                    <p class="Description">Located in North Ari Atoll, Veligandu Island is a reasonably small island. But in spite of being small, it has its own glory for vacationers. The island is filled with astonishing greenery that provides immense serenity in this land of shimmering waters. Also, the lagoons here provide great opportunities for diving and snorkeling. </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/02/Baros-Island.jpg" alt="img06" />
+                <figcaption>
+                    <h2>Baros Island</h2><br>
+                    <p class="Description">An ideal place that will keep the crowd at bay is the Baros Island, which happens to be among the top-rated islands in the Maldives. Mostly known for its natural elegance, the luxurious boutique resort, and the sun-kissed beaches is something to die for. With a number of water villas, the Baros Island is exclusively sought after, for its services and the privacy guests get to enjoy during their stay.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/02/Emboodhu-Finolhu-Island.jpg" alt="img03" />
+                <figcaption>
+                    <h2>Emboodhu Finolhu Island</h2><br>
+                    <p class="Description">The arrangement of water villas in the Emboodhu Island is a major attraction in itself. The water villas are arranged in the shape of a flower giving this island a jewel to add to the crown. If on a seaplane, the view is as beautiful as the stay here.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>			<!-- daam image size adjusting is such a drag -->
+            </figure>
+        </div>
+
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/02/MIRIHI.jpg" alt="img03" />
+                <figcaption>
+                    <h2> Mirihi Island </h2><br>
+                    <p class="Description">Vacationers looking for a complete detox stay at the Maldives should head to the Mihiri Island. With no television to watch, one is absolutely detached from the outside world if they keep their cell phones at bay. With no distraction from the outside world, ones stay at the beautiful island of Mirihi, honeymooners thrive here.</p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <div class="grid">
+            <figure class="effect-marley">
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/02/Huvahendhoo-Island.jpg" alt="img06" />
+                <figcaption>
+                    <h2>  Huvahendhoo Island </h2><br>
+                    <p class="Description">The calm water and the lustrous greenery that makes up the Huvahendhoo Island is where you should be for an undisturbed stay for rejuvenation. Whether you are traveling with family or your pack of friends, this island is where you can relax and detox yourself off of the hustle and bustle of daily city life. </p>
+                    <!-- <a href="#">View more</a> -->
+                </figcaption>
+            </figure>
+        </div>
+        <!-- <h2></h2> -->
+</body>
+</html>
